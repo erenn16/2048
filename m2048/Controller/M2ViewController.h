@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface M2ViewController : UIViewController
+@interface M2ViewController : UIViewController  <UIAlertViewDelegate>
 
 - (void)updateScore:(NSInteger)score;
 

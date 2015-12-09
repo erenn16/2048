@@ -7,12 +7,14 @@
 //
 
 #import "M2AppDelegate.h"
+#import <SkillzSDK-iOS/Skillz.h>
 
 @implementation M2AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  return YES;
+    [[Skillz skillzInstance] skillzInitForGameId:@"973"  environment:SkillzProduction];
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
